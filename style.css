@@ -1,3 +1,9 @@
+::root{
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box; 
+}
 body {
     box-sizing: border-box;
     margin:0;
@@ -53,4 +59,20 @@ nav ul a {
 }
 
 /* Estilos para el menu con iconos */
-
+.iconos li .texto-interior {
+    font-size: 3em;
+}
+.iconos ul {
+    display: flex;
+    flex-direction: column;
+}
+.iconos ul li {
+    flex: 1 0 25%;
+}
+.iconos ul li a {
+    display: flex;
+    justify-content:flex-start;
+}
+.iconos ul li a .icono{
+    flex: 0 1 2.2em;
+}
